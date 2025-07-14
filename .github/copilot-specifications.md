@@ -1,0 +1,1 @@
+- Pour créer une scratch org, il faut utiliser la commande sf org create scratch.
