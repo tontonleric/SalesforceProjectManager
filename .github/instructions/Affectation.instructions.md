@@ -8,6 +8,7 @@ description: Definition de l'objet personnalisé affectation
 - Label Anglais : Assignment | Assignments
 - Féminin : Oui
 - Label API : Assignment__c
+- SharingModel : ReadWrite
 
 # Description :
 Cet objet représente l'affectation d'un collaborateur à un projet. Il possède une date de début, une date de fin.
@@ -28,6 +29,7 @@ Cet objet représente l'affectation d'un collaborateur à un projet. Il possède
     - Relation nom : Collaborateur
     - Peut être vide : non
     - Peut être modifier : non
+    - Suppression en cascade : non
 - Projet :
     - Nom api : Project__c
     - Description : Ce champ permet de stocker le projet auquel le collaborateur est affecté
@@ -37,6 +39,7 @@ Cet objet représente l'affectation d'un collaborateur à un projet. Il possède
     - Relation nom : Projet
     - Peut être vide : non
     - Peut être modifier : non
+    - Suppression en cascade : non
 - Date de début :
     - Nom api : StartDate__c
     - Description : Ce champ permet de stocker la date de début de l'affectation

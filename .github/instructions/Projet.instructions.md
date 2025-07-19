@@ -71,9 +71,9 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
     - Objet cible : Account
     - Peut être vide : non
     - Peut être modifier : oui
+    - Nom de la relation : Projets
 
-
-# Automatisation :
-- Lors de la création d'un projet, le statut est automatiquement défini à "Non démarré".
-- Lors de la modification du statut d'un projet, si le statut est modifié à "En cours", la date de début réelle est automatiquement définie à la date actuelle.
-- Lors de la modification du statut d'un projet, si le statut est modifié à "Terminé", la date de fin réelle est automatiquement définie à la date actuelle.
+**IGNORE** # Automatisation :
+**IGNORE** - Lors de la création d'un projet, le statut est automatiquement défini à "Non démarré".
+**IGNORE** - Lors de la modification du statut d'un projet, si le statut est modifié à "En cours", la date de début réelle est automatiquement définie à la date actuelle.
+**IGNORE** - Lors de la modification du statut d'un projet, si le statut est modifié à "Terminé", la date de fin réelle est automatiquement définie à la date actuelle.
