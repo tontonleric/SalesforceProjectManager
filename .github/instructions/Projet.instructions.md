@@ -20,6 +20,7 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
     - Peut être modifier : non
     - Type : Id
 - Nom du projet :
+    - Nom anglais : Project Name
     - Nom api : Name
     - Description : Ce champ permet de stocker le nom du projet
     - Type : Texte
@@ -27,6 +28,7 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
     - Peut être vide : non
     - Peut être modifier : non
 - Statut :
+    - Nom anglais : Status
     - Nom api : Status__c
     - Description : Ce champ permet de stocker le statut du projet
     - Type : Liste de valeur
@@ -37,28 +39,33 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
         - En cours
         - Terminé
     - Règle métier :
+        - A la création d'un projet, le statut est automatiquement défini à "Non démarré".
         - Si le projet se trouve au statut "Non démarré", il ne peut passer qu'au statut "En cours".
         - Si le projet se trouve au statut "En cours", il ne peut passer qu'au statut "Terminé".
         - Si le projet se trouve au statut "Terminé", il ne peut pas changer de statut.
 - Date de création estimée :
-    - Nom api : EstimatedStartDate__c
+    - Nom anglais : Estimated Creation Date
+    - Nom api : EstimatedCreationDate__c
     - Description : Ce champ permet de stocker la date de début estimée du projet
     - Type : Date
     - Peut être vide : non
     - Peut être modifier : non
 - Date de création réelle :
+    - Nom anglais : Actual Start Date
     - Nom api : ActualStartDate__c
     - Description : Ce champ permet de stocker la date de début réelle du projet
     - Type : Date
     - Peut être vide : oui
     - Peut être modifier : oui
 - Date de fin estimée :
+    - Nom anglais : Estimated End Date
     - Nom api : EstimatedEndDate__c
     - Description : Ce champ permet de stocker la date de fin estimée du projet
     - Type : Date
     - Peut être vide : non
     - Peut être modifier : non
 - Date de fin réelle :
+    - Nom anglais : Actual End Date
     - Nom api : ActualEndDate__c
     - Description : Ce champ permet de stocker la date de fin réelle du projet
     - Type : Date
@@ -73,7 +80,6 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
     - Peut être modifier : oui
     - Nom de la relation : Projets
 
-**IGNORE** # Automatisation :
-**IGNORE** - Lors de la création d'un projet, le statut est automatiquement défini à "Non démarré".
-**IGNORE** - Lors de la modification du statut d'un projet, si le statut est modifié à "En cours", la date de début réelle est automatiquement définie à la date actuelle.
-**IGNORE** - Lors de la modification du statut d'un projet, si le statut est modifié à "Terminé", la date de fin réelle est automatiquement définie à la date actuelle.
+# Automatisation :
+- Lors de la modification du statut d'un projet, si le statut est modifié à "En cours", la date de début réelle est automatiquement définie à la date actuelle.
+- Lors de la modification du statut d'un projet, si le statut est modifié à "Terminé", la date de fin réelle est automatiquement définie à la date actuelle.

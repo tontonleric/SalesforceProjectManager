@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>TH001_Project</members>
+        <members>TH001_ProjectTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ProjectTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Assignment__c</members>
+        <members>Project__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Assignment__c.Collaborator__c</members>
+        <members>Assignment__c.EndDate__c</members>
+        <members>Assignment__c.Project__c</members>
+        <members>Assignment__c.StartDate__c</members>
+        <members>Project__c.Account__c</members>
+        <members>Project__c.ActualEndDate__c</members>
+        <members>Project__c.ActualStartDate__c</members>
+        <members>Project__c.EstimatedCreationDate__c</members>
+        <members>Project__c.EstimatedEndDate__c</members>
+        <members>Project__c.Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>61.0</version>
+</Package>
