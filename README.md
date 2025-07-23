@@ -6,10 +6,17 @@ L'objectif de ce projet est de fournir une base permettant l'analyse des fonctio
 
 Le thême du projet est le suivant : un gestionnaire de projets
 
-## Répertoires importants :
+## Répertoires notables :
 
-.github/instructions => les instructions a destination de l'agent
-.github/prompts => les prompts a destination de l'agent
-documentation => la doc
-template => template utilisé pour générer des classes apex.
+Liste des répertoires notables :
+- [Instructions](.github/instructions) : les instructions a destination de l'agent
+- [Prompts](.github/prompts) : les prompts a destination de l'agent
+- [Documentations](documentations) : la documentation
+- [Template](template) : template utilisé pour générer des classes apex.
+
+## Quelques remarques :
+
+Quelques remarques :
+- Si vous commencez à tester, je vous recommande de mettre le chat copilot en mode ask et de lui demander de créer un objet avec tout ses champs ou pas.
+- Pour l'instant la génération du flow est à l'état de test.
 
