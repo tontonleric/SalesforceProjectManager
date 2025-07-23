@@ -45,14 +45,14 @@ Cette commande va créer un nouveau projet Salesforce dans un répertoire nommé
 <pre><code>code TestMCP</code></pre>
 
 On revient à Visual Studio Code. Cette fois, on va configurer le projet afin qu’il fonctionne avec le serveur MCP. Pour ce faire, nous allons générer un fichier de paramétrage nommé « mcp.json » et l’enregistrer dans le dossier « .setup » du projet.
-<pre><code>{/n
-  "servers": {/n
-    "salesforce": {/n
-      "type": "stdio",/n
-      "command": "npx",/n
-      "args": ["-y", "@salesforce/mcp", "--orgs", "DEFAULT_TARGET_ORG", "--toolsets", "all"]/n
-    }/n
-  }/n
+<pre><code>{
+  "servers": {
+    "salesforce": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@salesforce/mcp", "--orgs", "DEFAULT_TARGET_ORG", "--toolsets", "all"]
+    }
+  }
 }</code></pre>
 
 Il ne reste plus qu'à démarrer le serveur MCP. Pour cela, on utilise le raccourci ctrl+shift+p pour ouvrir la palette de commandes de Visual Studio Code et on tape "MCP: List Server". Vous devriez voir le serveur Salesforce que vous venez de configurer avec la mention stopped à côté. Cliquez une première fois sur le nom du serveur et vous devriez voir un deuxième menu apparaitre. Cliquez sur "Start Server". Le serveur devrait démarrer et vous devriez voir le message "Server started" dans la console de Visual Studio Code.
