@@ -17,40 +17,40 @@ Visual Studio Code permet de créer des instructions qui vont permettre à GitHu
 ### Comment créer une instruction dans Visual Studio Code ?
 
 La génération d'instructions dans Visual Studio Code se fait assez facilement. Il suffit d'utiliser le raccourci `Ctrl + Maj + P` pour ouvrir la palette de commande, puis de taper "Chat: New Instructions File..." et de suivre les instructions à l'écran.
-![Chat: New Instructions File...](<Screencap/Screencap - 03.png>)
+![Chat: New Instructions File...](<Image/Image005.png>)
 
 Après avoir exécuté les directives, votre écran affichera un nouveau document intitulé « instructions.md ». Il devrait se présenter sous cette forme :
-![Nouveau fichier d’instructions](<Screencap/Screencap — 04.png>)
+![Nouveau fichier d’instructions](<Image/Image006.png>)
 
 À partir de là, vous pouvez commencer à rédiger vos instructions. Il est important de bien structurer le fichier pour que l'agent puisse les comprendre facilement.
 
 ### Instructions et template Apex
 
 Dans le cadre de mon test, pour représenter un objet personnalisé, j'ai structuré mon fichier de la manière suivante :
-![Fichier décrivant un objet](<Screencap/Screencap - 05.png>)
+![Fichier décrivant un objet](<Image/Image007.png>)
 
 C'est un fichier qui respecte le format Markdown. Le caractère '#' permet de définir différents niveaux de titre et j'utilise le caractère '-' pour créer des listes et des sous-listes d'éléments.
 
 De manière à pousser l'agent à se comporter d'une certaine manière, j'ai ajouté un fichier avec des instructions plus globales. C'est dans ce fichier que je pointe un template de base pour mes classes apex :
-![Fichier d'instructions générales](<Screencap/Screencap - 06.png>)
+![Fichier d'instructions générales](<Image/Image008.png>)
 
 ## Phase 2 : Création d'un prompt
 
 ### Comment créer un prompt dans Visual Studio Code ?
 
 La génération de prompt dans Visual Studio Code se fait également assez facilement. Il suffit d'utiliser le raccourci `Ctrl + Maj + P` pour ouvrir la palette de commande, puis de taper "Chat: New Prompt File..." et de suivre les instructions à l'écran.
-![Chat: New Prompt File... ](<Screencap/Screencap - 07.png>)
+![Chat: New Prompt File... ](<Image/Image009.png>)
 
 Après avoir exécuté les étapes, vous verrez apparaitre sur votre écran un document nommé « prompt.md ». Il aura l’apparence suivante :
-![Nouveau fichier de prompt](<Screencap/Screencap — 08.png>)
+![Nouveau fichier de prompt](<Image/Image010.png>)
 
 ### Présentation des prompts
 
 Dans le cadre de mon test, j'ai testé deux prompts différents :
     - Le premier se contente de générer toutes les métadonnées attendues
-![Génération seul](<Screencap/Screencap - 09.png>)
+![Génération seul](<Image/Image011.png>)
     - Le second fait la même chose, mais assure aussi le déploiement sur une org, en tirant parti du serveur MCP de Salesforce.
-![Génération et Déploiement](<Screencap/Screencap - 10.png>)
+![Génération et Déploiement](<Image/Image012.png>)
 
 ## Phase 3 : Premier retour d'expérience
 

@@ -31,10 +31,10 @@ Pour finir, on va installer le serveur MCP :
 Ensuite, on va s'occuper de la configuration de Visual Studio Code. On va installer les extensions nécessaires pour que le serveur MCP fonctionne correctement avec Visual Studio Code et GitHub Copilot, mais aussi les extensions pour Salesforce.
 
 On commence par installer l'extension Github Copilot. Pour cela, dans Visual Studio Code, allez dans l'onglet des extensions (icône de blocs empilés sur la barre latérale gauche). Recherchez "GitHub Copilot" et installez l'extension
-![Installation de l'extension Github Copilot](<Screencap/Etape001.png>)
+![Installation de l'extension Github Copilot](<Image/Image001.png>)
 
 Ensuite, on va installer l'extension Salesforce Extension Pack. Toujours dans l'onglet des extensions, recherchez "Salesforce Extension Pack (expanded)" et installez l'extension. Cette suite logicielle comprend divers outils pratiques pour manipuler Salesforce, notamment la ligne de commande Salesforce.
-![Installation de l'extension Salesforce Extension Pack](<Screencap/Etape002.png>)
+![Installation de l'extension Salesforce Extension Pack](<Image/Image002.png>)
 
 
 ## Étape 3 : Générer et configurer un projet Salesforce
@@ -57,8 +57,8 @@ On revient à Visual Studio Code. Cette fois, on va configurer le projet afin qu
 
 Il ne reste plus qu'à démarrer le serveur MCP. Pour cela, on utilise le raccourci ctrl+shift+p pour ouvrir la palette de commandes de Visual Studio Code et on tape "MCP: List Server". Vous devriez voir le serveur Salesforce que vous venez de configurer avec la mention stopped à côté. Cliquez une première fois sur le nom du serveur et vous devriez voir un deuxième menu apparaitre. Cliquez sur "Start Server". Le serveur devrait démarrer et vous devriez voir le message "Server started" dans la console de Visual Studio Code.
 
-![Menu de sélection du serveur MCP](<Screencap/Etape003.png>)
-![Message de démarrage du serveur MCP](<Screencap/Etape004.png>)
+![Menu de sélection du serveur MCP](<Image/Image003.png>)
+![Message de démarrage du serveur MCP](<Image/Image004.png>)
 
 ## Étape 4 : 
 
