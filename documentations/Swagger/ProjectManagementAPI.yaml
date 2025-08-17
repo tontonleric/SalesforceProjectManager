@@ -1,0 +1,77 @@
+openapi: '3.0.3'
+
+info:
+  title: ProjectManagementAPI
+  description: API permettant l'interaction avec le système de gestion de projet.
+  contact:
+    email: eric.wartelle@proton.me
+  version: '1.0'
+
+servers:
+  - url: https://api.server.test/v1
+
+tags:
+  - name: Project
+    description: Gestion des projets
+
+
+components:
+  parameters:
+    idProject:
+      name: id
+      in: path
+      required: true
+      description: Identifiant unique du projet.
+      schema:
+        type: string
+        format: uuid
+  schemas:
+    Project:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Identifiant unique du projet.
+        name:
+          type: string
+          description: Nom du projet.
+        status:
+          type: string
+          description: le statut du projet.
+          enum: [Non démarré, En cours, Terminé]
+        estimatedStartDate:
+          type: string
+          format: date
+          description: Date de début supposé du projet.
+        actualStartDate:
+          type: string
+          format: date
+          description: Date de début réelle du projet.
+        estimatedEndDate:
+          type: string
+          format: date
+          description: Date de fin supposée du projet.
+        actualEndDate:
+          type: string
+          format: date
+          description: Date de fin réelle du projet.
+
+paths:
+  /project/{id}:
+    get:
+      tags:
+        - Project
+      summary: Récupérer un projet correspondant à l'ID fournit
+      description: Récupère les détails d'un projet spécifique.
+      operationId: getProjectById
+      parameters:
+        - $ref: '#/components/parameters/idProject'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Project'
+        '404': 
+          description: Not found

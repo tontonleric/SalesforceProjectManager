@@ -19,6 +19,13 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
     - Peut être vide : non
     - Peut être modifier : non
     - Type : Id
+- UUID :
+    - Nom api : UUID__c
+    - Description : C'est l'UUID du projet
+    - Peut être vide : non
+    - Peut être modifier : non
+    - Type : Texte
+    - Taille : 36
 - Nom du projet :
     - Nom anglais : Project Name
     - Nom api : Name
@@ -43,14 +50,14 @@ Cet objet représente un objet réalisé pour un compte spécifique. Il possède
         - Si le projet se trouve au statut "Non démarré", il ne peut passer qu'au statut "En cours".
         - Si le projet se trouve au statut "En cours", il ne peut passer qu'au statut "Terminé".
         - Si le projet se trouve au statut "Terminé", il ne peut pas changer de statut.
-- Date de création estimée :
-    - Nom anglais : Estimated Creation Date
-    - Nom api : EstimatedCreationDate__c
+- Date de début estimée :
+    - Nom anglais : Estimated Start Date
+    - Nom api : EstimatedStartDate__c
     - Description : Ce champ permet de stocker la date de début estimée du projet
     - Type : Date
     - Peut être vide : non
     - Peut être modifier : non
-- Date de création réelle :
+- Date de début réelle :
     - Nom anglais : Actual Start Date
     - Nom api : ActualStartDate__c
     - Description : Ce champ permet de stocker la date de début réelle du projet
