@@ -11,6 +11,9 @@ public abstract class Abstract_DTO {
     private static final String LOG_CLASS_NAME = 'Abstract_DTO';
 
     // Constructor of the class Abstract_DTO
+    /**
+     * @description : Constructor of the Abstract_DTO class.
+     */
     public Abstract_DTO() {
         System.debug(LoggingLevel.INFO, LOG_CLASS_NAME + ' - Constructor start');
 
