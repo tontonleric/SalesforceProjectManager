@@ -22,7 +22,8 @@ applyTo: '**'
 
 ## Classes
 - Si rien n'est précisé, le nom d'une classe doit suivre la forme suivante : THXXX_NomDeLObjet ou XXX est en entier qui va de 001 à 999 et qui s'auto-incrémente à chaque nouvelle classe créée.
-- Si rien n'est précisé, utilise [TemplateApex](../../template/Template.cls)  comme template pour les classes de bases
+- Si rien n'est précisé, utilise [TemplateApex](../../documentations/Template/Template.cls) comme template pour les classes de bases
+- Si tu dois créer un DTO, utilise [TemplateApexDTO](../../documentations/Template/TemplateDTO.cls) qui appel Abstract_DTO comme classe de base
 - Attention, une classe apex doit être accompagné d'un fichier cls-meta.xml correspondant
 - Toutes classes apex doit être accompagné d'une classe de test correspondant
 
